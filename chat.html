@@ -14,35 +14,38 @@
     <style></style>
   </head>
   <body class="chats-body">
-    <div class="status-bar">
-      <div class="status-bar__column">
-        <span class="status-bar__clock">
-          13:53
-        </span>
-      </div>
-      <div class="status-bar__column">
-        <i class="fas fa-clock"></i>
-        <i class="fas fa-volume-mute"></i>
-        <i class="fas fa-wifi"></i>
-        <span class="status-bar__battery-level">100%</span>
-        <i class="fas fa-battery-full"></i>
-      </div>
-    </div>
-
-    <header class="header">
-      <div class="header__header-column">
-              <a href="index.html" class="header__back-btn">
-              <i class="fas fa-arrow-left"></i>
-            </a>
-        <h1 class="header__title">Best Friend</h1>
-      </div>
-      <div class="header__header-column">
-        <span class="header__icon">
-          <i class="fas fa-search"></i>
-          <span class="header__icon">
-              <i class="fas fa-bars"></i>
-          </span>
-        </header>
+    <div class="header-wrapper">
+    
+        <div class="status-bar">
+          <div class="status-bar__column">
+            <span class="status-bar__clock">
+              13:53
+            </span>
+          </div>
+          <div class="status-bar__column">
+            <i class="fas fa-clock"></i>
+            <i class="fas fa-volume-mute"></i>
+            <i class="fas fa-wifi"></i>
+            <span class="status-bar__battery-level">100%</span>
+            <i class="fas fa-battery-full"></i>
+          </div>
+        </div>
+    
+        <header class="header">
+          <div class="header__header-column">
+                  <a href="index.html" class="header__back-btn">
+                  <i class="fas fa-arrow-left"></i>
+                </a>
+            <h1 class="header__title">Best Friend</h1>
+          </div>
+          <div class="header__header-column">
+            <span class="header__icon">
+              <i class="fas fa-search"></i>
+              <span class="header__icon">
+                  <i class="fas fa-bars"></i>
+              </span>
+            </header>
+            </div>
 
           <main class="chat-screen">
               <ul class="chat__messages">
@@ -63,22 +66,41 @@
                         <div class="message__content">
                           <div class="message__column-reverse">
                             
-                              <div class="message__bubble">Thank You!!</div>
+                              <div class="message__bubble my-message__bubble">Thank You!!</div>
                             <span class="message__timestamp">12 : 14</span>
                           </div>
                          </div>
-                    </li>          
+                    </li>
+                    <li class="incoming-message message">
+                      <img src="images/avatar.jpg" class="message__avatar">
+                      <div class="message__content">
+                          <span class="message__author">Best friend</span>
+                          <div class="message__column">
+                            <div class="message__bubble">Congrats I love You!!
+                            </div> 
+                            <span class="message__timestamp">12 : 13</span>
+                        </div>
+                      </div>
+                     
+                  </li>  
+                  <li class="my-message message">
+                          <div class="message__content">
+                            <div class="message__column-reverse">
+                              
+                                <div class="message__bubble my-message__bubble">Thank You!!</div>
+                              <span class="message__timestamp">12 : 14</span>
+                            </div>
+                           </div>
+                      </li>          
             </ul>
           </main>           
-
+<div class="chat__write-wrapper">
         <div class="chat__write">
-            <div class="chat__write-column">
-                <i class="far fa-plus-square"></i>
-            </div>
-            <div class="chat__write-column">
-                <input type="text" class="chat__write-input" placeholder="Send message">
-            </div>
-            <div class="chat__write-column">
+            <input type="text" class="chat__write-input" placeholder="Send message">
+            <span class="chat__write-icon chat__write-left-icon invisible-when-focus">  
+            <i class="far fa-plus-square"></i>
+          </span>
+            <div class="chat__write-column chat__write-right-icon invisible-when-focus">
                 <span class="chat__write-icon">
                     <i class="far fa-smile-wink"></i>
                 </span>
@@ -87,6 +109,10 @@
                 </span>
             </div>
         </div>
+      </div>
        
+    <div class="bigScreen">
+      <span class="bigScreen__text">Please make your screen smaller!!</span>
+    </div>
   </body>
 </html>
